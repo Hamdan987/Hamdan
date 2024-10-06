@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.roadmap {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+}
+
+.activity {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007bff;
+}
+
+.content {
+    padding-left: 40px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Add a line to connect the activities */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+}
